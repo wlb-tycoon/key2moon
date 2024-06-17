@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'satashi';
+  src: uurl('https://fonts.cdnfonts.com/css/satoshi');
+}
+
+
+.service-item .bullet {
+  color: #0029FF;
+}
+
+.partner-item {
+  background: radial-gradient(50% 50% at 50% 50%, #2D0C26 0%, #5E1643 100%);
+  border: 1px solid #F33592;
+  border-radius: 25px;
+  padding: 12px;
+  font-weight: normal;
+}
+
+.partner-item .bullet {
+  text-shadow: 0px 0px 8px 0px #FFFFFF;
+}
+
+.blog-item {
+  background: #000211;
+  box-shadow: 0px 0px 18.42px 0px #45F336;
+  box-shadow: 0px 0px 36.83px 0px #45F336;
+  border: 0.74px solid #45F336;
+  font-family: 'satoshi';
+}
+
+
+@layer utilities {
+
+  .offer-active.purple {
+    border: 1px solid #801EFF;
+    box-shadow: 0px 0px 10px 0px #801EFF;
+    box-shadow: 0px 0px 5px 0px #801EFF;
+  }
+
+  .offer-active.purple .offer-item-icon {
+    border: 1px solid #801EFF;
+    background: radial-gradient(50% 50% at 50% 50%, #11051C 0%, #270F3D 100%);
+  }
+
+  .offer-active.red {
+    border: 1px solid #F33592;
+    box-shadow: 0px 0px 10px 0px #F33592;
+    box-shadow: 0px 0px 5px 0px #F33592;
+  }
+
+  .offer-active.red .offer-item-icon {
+    border: 1px solid #F33592;
+    background: radial-gradient(50% 50% at 50% 50%, #11051C 0%, #7e1d4c 100%);
+  }
+
+  .offer-active.green {
+    border: 1px solid #45F336;
+    box-shadow: 0px 0px 10px 0px #45F336;
+    box-shadow: 0px 0px 5px 0px #45F336;
+  }
+
+  .offer-active.green .offer-item-icon {
+    border: 1px solid #45F336;
+    background: radial-gradient(50% 50% at 50% 50%, #11051C 0%, #255820 100%);
+  }
+
+  .progress-wrapper.purple .progress-number {
+    background: radial-gradient(50% 50% at 50% 50%, #11051C 0%, #270F3D 100%);
+    border: 1px solid #801EFF;
+    box-shadow: 0px 0px 25px 0px #801EFF;
+  }
+
+  .progress-wrapper.purple .horizontal-line {
+    background: linear-gradient(90deg, #801EFF 0%, #562496 62%, #000211 100%);
+  }
+
+  .progress-wrapper.purple .vertical-line {
+    background: linear-gradient(180deg, #801EFF 0%, #562496 62%, #000211 100%);
+  }
+
+  .progress-wrapper.purple .ellipse {
+    -webkit-text-stroke-color: #801EFF;
+    -webkit-text-strokeWidth: 0.5px;
+    box-shadow: 0px 0px 5px 0px #801EFF;
+    box-shadow: 0px 0px 10px 0px #C496FF;
+  }
+
+  .progress-wrapper.red .progress-number {
+    box-shadow: 0px 0px 25px 0px #F33592;
+    border: 1px solid #F33592;
+    background: radial-gradient(50% 50% at 50% 50%, #2D0C23 0%, #5E1643 100%);
+  }
+
+  .progress-wrapper.red .horizontal-line {
+    background: linear-gradient(90deg, #F33592 0%, #F33592 62%, #000211 100%);
+  }
+
+  .progress-wrapper.red .vertical-line {
+    background: linear-gradient(180deg, #F33592 0%, #F33592 62%, #000211 100%);
+  }
+
+  .progress-wrapper.red .ellipse {
+    -webkit-text-stroke-color: #F33592;
+    -webkit-text-strokeWidth: 0.5px;
+    box-shadow: 0px 0px 5px 0px #F33592;
+    box-shadow: 0px 0px 10px 0px #C496FF;
+  }
+
+  .progress-wrapper.green .progress-number {
+    box-shadow: 0px 0px 25px 0px #45F336;
+    background: radial-gradient(50% 50% at 50% 50%, #0A2D07 0%, #1B6D14 100%);
+    border: 1px solid #45F336
+  }
+
+  .progress-wrapper.green .horizontal-line {
+    background: linear-gradient(90deg, #45F336 0%, #45F336 62%, #000211 100%);
+  }
+
+  .progress-wrapper.green .vertical-line {
+    background: linear-gradient(180deg, #45F336 0%, #45F336 62%, #000211 100%);
+  }
+
+  .progress-wrapper.green .ellipse {
+    -webkit-text-stroke-color: #45F336;
+    -webkit-text-strokeWidth: 0.5px;
+    box-shadow: 0px 0px 5px 0px #45F336;
+    box-shadow: 0px 0px 10px 0px #c1eebd;
+  }
+
+  .why-us-active {
+
+    box-shadow: 0px 0px 25px 0px #45F336;
+
+    box-shadow: 0px 0px 50px 0px #45F336;
+
+    background: radial-gradient(50% 50% at 50% 50%, #0A2D07 0%, #0A2D07 0.01%, #1B6D14 100%);
+    border: 1px solid #45F336;
+    box-shadow: 0px 0px 25px 0px #45F336;
+
+    box-shadow: 0px 0px 50px 0px #45F33640;
+    color: white;
+    cursor: pointer;
+  }
+
+}
